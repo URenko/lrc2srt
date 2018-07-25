@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://cdn.bootcss.com/jszip/3.1.5/jszip.min.js"></script>
+	</head>
+	<body>
+		<button onclick="convert();">开始转换</button> <a id="Downloader" download="untitled.srt" onclick="reset();">点击下载</a>
+		<div id="DragBox">
+			<textarea rows="10" cols="50" id="Textarea" placeholder="输入或拖拽.lrc文件至框内，支持多个文件"></textarea>
+		</div>
+		<script type="text/javascript" src="lrc2srt.js"></script>
+		<a href="https://github.com/URenko/lrc2srt"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+		<span class="foot" target="_blank">Copyright (C) 2018 Renko <a href="https://urenko.github.io/lrc2srt/LICENSE">LICENSE</a></span>
+	</body>
+</html>
