@@ -41,7 +41,7 @@ function handle(file){
 
 function lrc2srt(lrc){
   function parseMs(min,sec,mil){
-  	function add0(num){return num>10?num.toString:`0${num}`;};
+  	function add0(num){return num>10?num.toString():`0${num}`;};
   	return `${add0(Math.floor(min/60))}:${add0(min%60)}:${sec},${mil}`;
   }
   let lrcRe = /\[(\d\d):(\d\d).(\d{2,3})\]([^\[]+)/g;
